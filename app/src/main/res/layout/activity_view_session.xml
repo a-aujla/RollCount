@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/total_rolls_text">
+
+    </TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/avg_text"
+        android:id="@+id/histogram_text">
+
+    </TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/total_rolls_text"
+        android:id="@+id/min_text">
+
+    </TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/min_text"
+        android:id="@+id/max_text">
+    </TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/max_text"
+        android:id="@+id/avg_text">
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="4dp"
+        android:text="Add Roll"
+        android:id="@+id/add_roll_button" />
+
+    <Button
+        android:id="@+id/undo_roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_roll_button"
+        android:layout_alignBaseline="@+id/add_roll_button"
+        android:layout_marginEnd="-118dp"
+        android:text="Undo Roll" />
+
+    <Button
+        android:id="@+id/edit_session_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/undo_roll_button"
+        android:layout_alignBaseline="@+id/undo_roll_button"
+        android:layout_marginEnd="-88dp"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/delete_session_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_session_button"
+        android:layout_alignBaseline="@+id/edit_session_button"
+        android:layout_marginEnd="-89dp"
+        android:text="Delete" />
+
+
+</RelativeLayout>
